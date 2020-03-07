@@ -1,6 +1,6 @@
 A simple web app using CodeIgniter frameworks.
 
-This is a single web page displaying the deck of card.
+This is a single web page displaying a deck of 52 card.
 It keep counting the number of card have left.
 
 The deck will be divided into 13 piles according to their rank.
