@@ -178,5 +178,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<td></td>
 		</tr>
 	</table>
+<script type="text/javascript" src="Js/deck.js" ></script>
 </body>
 </html>
