@@ -61,112 +61,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 	<table>
 		<tr>
-			<td>
-				<button id="three" class="card red" count="4">
-					3
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
+			<?php 
 
-			<td>
-				<button id="three" class="card red" count="4">
-					4
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					5
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					6
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					7
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					8
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					9
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					10
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					J
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					Q
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					K
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					A
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			<td>
-				<button id="three" class="card red" count="4">
-					2
-					<div id="count_three" class="count">
-					4
-					</div>
-				</button>
-			</td>
-			
+			foreach ($deck_count as $card_name => $card_count ) {
+				?>
+					<td>
+						<button id="<?php echo $card_name;?>" class="card red" count="<?php echo $card_count; ?>">
+							<?php echo $card_name; ?>
+							<div id="count_<?php echo $card_name;?>" class="count">
+							<?php echo $card_count; ?>
+							</div>
+						</button>
+					</td>
+				<?php
+			}
+
+			?>
 			
 			<td>
 				<div class="action">
