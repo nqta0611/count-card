@@ -1,4 +1,4 @@
-A simple web app using CodeIgniter frameworks.
+A simple static web app (no backend needed) using CodeIgniter frameworks.
 
 This is a single web page displaying a deck of 52 card.
 It keep counting the number of card have left.
